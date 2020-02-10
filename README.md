@@ -9,7 +9,7 @@ Most of the models were developed in Blender, with influence from real world
 objects and games. The theme for my world was for a futuristic city inside
 of the moon, though there is a lake this was a part of the theme and 
 "Story". The roof was meant to be similar to the floor where it changes
-each time the world is loaded, however this did not go as planned and 
+each time the world is loaded; however this did not go as planned and 
 ultimately was left flat. 
 
 The project should run straight from download without any need for changing
