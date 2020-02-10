@@ -1,0 +1,14 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="performance-logger-a-simple-and-powerful-logging-tool-for-unity-games">Performance Logger - A Simple and Powerful Logging Tool for Unity Games</h1>
+<p>This logger only requires you to start and end the logger, the rest is handled for you.
+Once activated, the logger will record the frametime for every frame; on dump, a summary will be generated, a long with pulled system specs, and the full log.</p>
+<p>Include the namespace QFSW.PL to gain access to the performance logger</p>
+<p>To begin, call <code>PerformanceLogger.StartLogger();</code></p>
+<p>To end and dump the logger, call <code>EndLogger(string Path, string ExtraInfo = "", bool Async = true, Action CompletionCallback = null)</code></p>
+<p><code>Path</code> is the full file path (name included) of the dumped log file</p>
+<p><code>ExtraInfo</code> is a string that will be prepended to the log file, this could be useful to use as a version number</p>
+<p><code>Async</code> will cause the dump to run in async mode, which is highly recommended for large dumps. If this is used, you should use the <code>CompletionCallback</code>, which will execute (on the main thread) as soon as the dump process is done. This is useful for disabling a message.</p>
+<p>If you want to log a custom event, such as spawning a boss, use <code>PerformanceLogger.LogCustomEvent(string EventData)</code>, and the event will be added to the log file.</p>
+<p>An example of the log file can be seen here:
+<img alt="alt text" src="https://pbs.twimg.com/media/DeMO4raXUAAlMHE.jpg:large" /></p>
+</body></html>
